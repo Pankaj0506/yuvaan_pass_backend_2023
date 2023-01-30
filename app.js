@@ -182,6 +182,6 @@ app.get('/verified', async (req, res) => {
   res.render('verified', { data })
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Server 3000 running!')
 })
